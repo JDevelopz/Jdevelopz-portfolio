@@ -232,13 +232,12 @@ span {
   .navbar-collapse {
     position: absolute;
     width: 100%;
-    height: 26vh;
+    height: 100vh;
     padding: 1rem;
     right: 0rem;
     top: 4rem;
     background-color: var(--bg-color);
     z-index: 5022;
-    transition: 1s;
   }
 }
 
@@ -285,6 +284,13 @@ span {
   color: var(--secondary-color);
 }
 
+@media screen and (max-width:850px) {
+.ms-auto {
+  margin-left: auto !important;
+  margin-right: auto;
+  line-height: 3rem;
+}
+}
 /* Resume button */
 .btn-resume {
   color: var(--secondary-color);
@@ -506,7 +512,7 @@ span {
     border-color: #1a1b1d;
     transition: 2s;
   } */
-@media screen and (max-width: 850px) {
+/* @media screen and (max-width: 850px) {
   .profile-pic:hover {
     background-image: url("images/Jeffmix.jpg");
     background-size: 10rem, auto;
@@ -519,7 +525,7 @@ span {
     border-color: var(--paragraph-color);
     transition: 2s;
   }
-}
+} */
 
 /* SECTION-END */
 /* SECTION-experience */
@@ -876,6 +882,58 @@ span {
   color: var(--secondary-color);
 }
 
+/* Section other projects  */
+
+.f-p-box {
+  cursor: pointer;
+}
+.f-p-box img {
+  width: 100%;
+  height: auto;
+  position: relative;
+}
+
+.f-pr {
+  position: relative;
+  margin-bottom: 5rem;
+  text-align: center;
+}
+
+.pr-d {
+  background-color: black;
+  opacity: 0.8;
+  position: absolute;
+  width: 100%;
+  height: 20%;
+  bottom: 0%;
+  padding-left: 15%;
+  padding-right: 15%;
+  transition: 2s;
+  overflow: hidden;
+}
+
+.pr-d:hover {
+  height: 100%;
+  transition: 2s;
+}
+.pr-d-hover {
+  text-align: center;
+  margin-top:1rem;
+  line-height: ;
+}
+
+ .pr-d i {
+  margin-right: 1%;
+  font-size: 16px;
+}
+
+.f-p-box p {
+  font-size: 18px;
+  color: white;
+  z-index: 3;
+  text-align: center;
+  margin-bottom: 1%;
+}
 /* SECTION-END */
 /* SECTION-contact */
 .container-contact {
